@@ -2,7 +2,7 @@
  * @Author: tanzhiyu
  * @Date: 2021-10-07 23:03:59
  * @LastEditors: tanzhiyu
- * @LastEditTime: 2021-10-14 11:19:51
+ * @LastEditTime: 2021-11-01 17:07:08
  */
 const fs = require('fs');
 import { Primitive, isPrimitive } from 'utility-types';
@@ -25,7 +25,6 @@ console.log(consumer(['a', 'b', 'c', 1, 2]));
 export const writeDataFile = (data: any) => {
   fs.writeFileSync(path.join(__dirname, 'data.json'), JSON.stringify(data));
 }
-writeDataFile({a: 'a', b: 'b'});
 
 
 
