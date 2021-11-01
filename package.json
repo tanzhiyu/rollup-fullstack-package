@@ -14,10 +14,15 @@
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "tslib": "^2.3.1",
     "typescript": "^4.4.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:node.cjs": "rollup -c rollup.node.config.js --format cjs",
+    "build:node.umd": "rollup -c rollup.node.config.js --format umd",
+    "build:node.esm": "rollup -c rollup.node.config.js --format esm",
+    "build:node.iife": "rollup -c rollup.node.config.js --format iife"
   },
   "author": "",
   "license": "ISC"
