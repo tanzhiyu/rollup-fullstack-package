@@ -1,19 +1,24 @@
 {
-  "name": "start-ts",
+  "name": "rollup-fullstack-package",
   "version": "1.0.0",
   "description": "ts",
-  "main": "index.js",
+  "main": "build/dist/index.js",
+  "node": "build/node/index.js",
   "dependencies": {
     "csstype": "^3.0.9",
+    "qs": "^6.10.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "utility-types": "^3.10.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "rollup-plugin-inject-process-env": "^1.3.1",
     "tslib": "^2.3.1",
     "typescript": "^4.4.4"
   },
@@ -22,8 +27,9 @@
     "build:node.cjs": "rollup -c rollup.node.config.js --format cjs",
     "build:node.umd": "rollup -c rollup.node.config.js --format umd",
     "build:node.esm": "rollup -c rollup.node.config.js --format esm",
-    "build:node.iife": "rollup -c rollup.node.config.js --format iife"
+    "build:node.iife": "rollup -c rollup.node.config.js --format iife",
+    "build:web.umd": "rollup -c rollup.web.config.js --format umd"
   },
-  "author": "",
+  "author": "tanzhiyu",
   "license": "ISC"
 }
