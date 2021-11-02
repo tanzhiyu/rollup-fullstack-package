@@ -25,10 +25,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:node.cjs": "rollup -c rollup.server.config.js --format cjs",
-    "build:node.umd": "rollup -c rollup.server.config.js --format umd",
-    "build:node.esm": "rollup -c rollup.server.config.js --format esm",
-    "build:node.iife": "rollup -c rollup.server.config.js --format iife",
+    "build:server.cjs": "rollup -c rollup.server.config.js --format cjs",
+    "build:server.umd": "rollup -c rollup.server.config.js --format umd",
+    "build:server.esm": "rollup -c rollup.server.config.js --format esm",
+    "build:server.iife": "rollup -c rollup.server.config.js --format iife",
     "build:web.umd": "rollup -c rollup.web.config.js --format umd"
   },
   "author": "tanzhiyu",
