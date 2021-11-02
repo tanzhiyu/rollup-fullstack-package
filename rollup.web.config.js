@@ -2,7 +2,7 @@
  * @Author: tanzhiyu
  * @Date: 2021-11-01 18:33:55
  * @LastEditors: tanzhiyu
- * @LastEditTime: 2021-11-02 13:45:41
+ * @LastEditTime: 2021-11-02 15:09:41
  */
 /*
  * @Author: tanzhiyu
@@ -18,7 +18,7 @@ import injectProcessEnv from 'rollup-plugin-inject-process-env';
 const pkg = require('./package.json');
 
 export default {
-  input: "src/ui/index.tsx",
+  input: "src/web/index.tsx",
   output: {
     file: pkg.main,
   },
