@@ -4,6 +4,5 @@
  * @LastEditors: tanzhiyu
  * @LastEditTime: 2021-11-02 16:29:00
  */
-
-export { greet }  from "./utils/greet";
+export { greet } from "./utils/greet";
 export { getProcessCwd, writeDataFile } from './utils/util';
